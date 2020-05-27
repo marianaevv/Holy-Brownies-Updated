@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ 
+<html>
+ 
+  <head>
+ 
+    <meta charset="utf-8">
+ 
+    <title>Date and Time Pickers</title>
+ 
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2018.2.620/styles/kendo.bootstrap-v4.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2018.2.620/js/kendo.all.min.js"></script>
+ 
+    <style>
+      body {font-family: helvetica;}
+    </style>
+ 
+  </head>
+ 
+  <body>
+ 
+    <input id="datePicker">
+ 
+    <input id="timePicker">
+    <script>
+
+      $(document).ready(function(){
+        $('#datePicker').kendoDatePicker({
+        disableDates: [new Date(2018, 11, 24), new Date(2018, 11, 25)]
+        });
+      });
+      $(document).ready(function(){
+        
+    $('#timePicker').kendoTimePicker();
+    new Date(year, month, day, hours, minutes, seconds, milliseconds)
+  });
+    
+  </script>
+  </body>
+</html>
